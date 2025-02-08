@@ -16,8 +16,8 @@ def register(request):
             return redirect('dashboard')
     else:
         form = UserRegistrationForm()
-    return render(request, 'accounts/templates/accounts/register.html', {'form': form})
+    return render(request, 'accounts/register.html', {'form': form})
 
 @login_required
 def profile(request):
-    return render(request, 'accounts/templates/accounts/profile.html')
+    return render(request, 'accounts/profile.html')

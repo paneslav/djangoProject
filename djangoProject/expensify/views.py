@@ -5,4 +5,4 @@ from django.shortcuts import render
 # Create your views here.
 @login_required
 def dashboard(request):
-    return render(request, 'templates/dashboard.html')
+    return render(request, 'expensify/dashboard.html')
